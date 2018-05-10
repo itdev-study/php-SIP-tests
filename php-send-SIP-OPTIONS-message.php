@@ -3,7 +3,8 @@ error_reporting(E_ALL);
 echo "<h2>TCP/IP Connection</h2>\n";
 $service_port = '5060';
 $address = gethostbyname('192.168.254.91');
-/* Create a TCP/IP socket. */
+
+/* Create a UDP/IP socket. */
 $socket = socket_create(AF_INET, SOCK_DGRAM, SOL_UDP);
 if ($socket < 0) {
     echo "socket_create() failed: reason: " . socket_strerror($socket) . "\n";
