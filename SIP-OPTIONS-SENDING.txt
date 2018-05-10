@@ -1,0 +1,64 @@
+---
+Reliably Transmitting (NAT) to 178.57.85.83:1120:
+OPTIONS sip:8888822@192.168.254.91:5060 SIP/2.0
+Via: SIP/2.0/UDP 185.87.50.176:5060;branch=z9hG4bK684e3f92;rport
+Max-Forwards: 70
+From: "asterisk" <sip:asterisk@185.87.50.176>;tag=as1df605eb
+To: <sip:8888822@192.168.254.91:5060>
+Contact: <sip:asterisk@185.87.50.176:5060>
+Call-ID: 1240d55856b6888822ee028b5908d294@185.87.50.176:5060
+CSeq: 102 OPTIONS
+User-Agent: Asterisk PBX 13.7.2
+Date: Thu, 10 May 2018 13:28:02 GMT
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH, MESSAGE
+Supported: replaces, timer
+Content-Length: 0
+
+
+---
+
+<--- SIP read from UDP:178.57.85.83:1120 --->
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 185.87.50.176:5060;branch=z9hG4bK684e3f92;rport=5060
+From: "asterisk" <sip:asterisk@185.87.50.176>;tag=as1df605eb
+To: <sip:8888822@192.168.254.91:5060>;tag=351375159
+Call-ID: 1240d55856b6888822ee028b5908d294@185.87.50.176:5060
+CSeq: 102 OPTIONS
+User-Agent: Yealink SIP-T46G 28.81.14.1
+Content-Length: 0
+
+<------------->
+--- (8 headers 0 lines) ---
+Really destroying SIP dialog '1240d55856b6888822ee028b5908d294@185.87.50.176:5060' Method: OPTIONS
+Reliably Transmitting (NAT) to 178.57.85.83:5064:
+OPTIONS sip:8888821@192.168.254.103:5064 SIP/2.0
+Via: SIP/2.0/UDP 185.87.50.176:5060;branch=z9hG4bK2fa0d269;rport
+Max-Forwards: 70
+From: "asterisk" <sip:asterisk@185.87.50.176>;tag=as69bd7d1f
+To: <sip:8888821@192.168.254.103:5064>
+Contact: <sip:asterisk@185.87.50.176:5060>
+Call-ID: 103ccc4b2ae03f014e8873a56ed6653f@185.87.50.176:5060
+CSeq: 102 OPTIONS
+User-Agent: Asterisk PBX 13.7.2
+Date: Thu, 10 May 2018 13:28:02 GMT
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH, MESSAGE
+Supported: replaces, timer
+Content-Length: 0
+
+
+---
+
+<--- SIP read from UDP:178.57.85.83:5064 --->
+
+
+<------------->
+
+<--- SIP read from UDP:178.57.85.83:5064 --->
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 185.87.50.176:5060;branch=z9hG4bK2fa0d269;rport
+From: "asterisk" <sip:asterisk@185.87.50.176>;tag=as69bd7d1f
+To: <sip:8888821@192.168.254.103:5064>;tag=1113746373
+Call-ID: 103ccc4b2ae03f014e8873a56ed6653f@185.87.50.176:5060
+CSeq: 102 OPTIONS
+User-Agent: Yealink SIP-T28P 2.73.14.1
+Content-Length: 0
