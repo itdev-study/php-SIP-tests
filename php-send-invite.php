@@ -10,7 +10,7 @@ $service_port = '5060';
 
 /* Get the IP address for the target host. */
 //$address = gethostbyname('www.example.com');
-$address = gethostbyname('192.168.254.166');
+$address = gethostbyname('192.168.254.103');
 
 
 /* Create a TCP/IP socket. */
@@ -33,13 +33,13 @@ if ($result < 0) {
 //$in .= "Host: www.example.com\r\n";
 //$in .= "Connection: Close\r\n\r\n";
 
-$invite  = 'INVITE sip:192.168.254.166 SIP/2.0';
-$via  = 'Via: SIP/2.0/UDP 192.168.254.101:5060;branch=z9hG4bK584583368';
-$from  = 'From: "192.168.254.101" <sip:192.168.254.101@192.168.254.101>;tag=847215909';
-$in4  = 'To: <sip:192.168.254.166@192.168.254.166:5060>';
+$invite  = 'INVITE sip:192.168.254.103 SIP/2.0';
+$via  = 'Via: SIP/2.0/UDP 192.168.254.177:5060;branch=z9hG4bK584583368';
+$from  = 'From: "192.168.254.177" <sip:192.168.254.177@192.168.254.177>;tag=847215909';
+$in4  = 'To: <sip:192.168.254.166@192.168.254.103:5060>';
 $in5  = 'Call-ID: 368681527@192.168.254.101';
 $in6  = 'CSeq: 1 INVITE';
-$in7  = 'Contact: <sip:192.168.254.101@192.168.254.101:5060>';
+$in7  = 'Contact: <sip:192.168.254.101@192.168.254.177:5060>';
 $in8  = 'Content-Type: application/sdp';
 $in9  = 'Allow: INVITE, INFO, PRACK, ACK, BYE, CANCEL, OPTIONS, NOTIFY, REGISTER, SUBSCRIBE, REFER, PUBLISH, UPDATE, MESSAGE';
 $in10  = 'Max-Forwards: 70';
