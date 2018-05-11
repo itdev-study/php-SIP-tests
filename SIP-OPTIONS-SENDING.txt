@@ -62,3 +62,36 @@ Call-ID: 103ccc4b2ae03f014e8873a56ed6653f@185.87.50.176:5060
 CSeq: 102 OPTIONS
 User-Agent: Yealink SIP-T28P 2.73.14.1
 Content-Length: 0
+
+=====================================================
+
+
+16:56:02.913183 IP (tos 0x0, ttl 64, id 25094, offset 0, flags [none], proto UDP (17), length 598)
+    telworks.ru.sip > 178.57.85.83.1120: SIP, length: 570
+        OPTIONS sip:8888822@192.168.254.91:5060 SIP/2.0
+        Via: SIP/2.0/UDP 185.87.50.176:5060;branch=z9hG4bK76f352f1;rport
+        Max-Forwards: 70
+        From: "asterisk" <sip:asterisk@185.87.50.176>;tag=as4c953f63
+        To: <sip:8888822@192.168.254.91:5060>
+        Contact: <sip:asterisk@185.87.50.176:5060>
+        Call-ID: 73d299ca4aca87f82592802a218801d2@185.87.50.176:5060
+        CSeq: 102 OPTIONS
+        User-Agent: Asterisk PBX 13.7.2
+        Date: Thu, 10 May 2018 13:56:02 GMT
+        Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH, MESSAGE
+        Supported: replaces, timer
+        Content-Length: 0
+
+
+16:56:02.926386 IP (tos 0x68, ttl 61, id 0, offset 0, flags [DF], proto UDP (17), length 374)
+    178.57.85.83.1120 > telworks.ru.sip: SIP, length: 346
+        SIP/2.0 200 OK
+        Via: SIP/2.0/UDP 185.87.50.176:5060;branch=z9hG4bK76f352f1;rport=5060
+        From: "asterisk" <sip:asterisk@185.87.50.176>;tag=as4c953f63
+        To: <sip:8888822@192.168.254.91:5060>;tag=2456375467
+        Call-ID: 73d299ca4aca87f82592802a218801d2@185.87.50.176:5060
+        CSeq: 102 OPTIONS
+        User-Agent: Yealink SIP-T46G 28.81.14.1
+        Content-Length: 0
+16:56:46.724843 IP (tos 0x68, ttl 61, id 0, offset 0, flags [DF], proto UDP (17), length 32)
+    178.57.85.83.1120 > telworks.ru.sip: SIP, length: 4
